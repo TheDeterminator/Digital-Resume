@@ -5,9 +5,7 @@
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bootstrap 4 Portfolio/Resume Theme for Developers">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="shortcut icon" href="favicon.ico">  
     
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
@@ -20,7 +18,7 @@
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
     
     <!-- github calendar css -->
-    <!-- <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css"> -->
+    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css">
     <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
     <!-- github acitivity css -->    
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
@@ -200,23 +198,17 @@
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
 
-                <!-- <section class="github section">
+                <section class="github section">
                     <div class="section-inner">
                         <h2 class="heading">My GitHub</h2>
-                        <p>You can embed your GitHub contribution graph calendar using IonicaBizau's <a href="https://github.com/IonicaBizau/github-calendar" target="_blank">GitHub Calendar</a> widget. 
-                        
-                        <div id="github-graph" class="calendar">
+                        <div id="github-graph">
+                        </div>
 
-                         </div>//github-graph 
-
-                        <p>You can also embed your GitHub activities using Casey Scarborough's <a href="https://caseyscarborough.com/projects/github-activity/" target="_blank">GitHub Activity Stream</a> widget.        
-                        //Usage: https://caseyscarborough.com/projects/github-activity/                       
                         <div id="ghfeed" class="ghfeed">
-                        </div>//ghfeed
-                        
-                    </div>//secton-inner
-                </section>//section -->
-            </div><!--//primary-->
+                        </div>                        
+                    </div>
+                </section>
+            </div>
             <div class="secondary col-lg-4 col-12">
                  <aside class="info aside section">
                     <div class="section-inner">
@@ -239,7 +231,6 @@
                                 Here is a brief list of my skills a more complete list can be found on LinkedIn. Among other things my experience with Databases, Node and Alogorithms and Software tools are not detailed below</p>
                             
                             <div class="skillset">
-                               
                                 <div class="item">
                                     <h3 class="level-title">Javascript &amp; React<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="I am advanced in ES6+ along with React.js and Node.js"><i class="fas fa-info-circle"></i>Expert</span></h3>
                                     <div class="level-bar">
@@ -301,16 +292,40 @@
     <script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
     <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
-    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
+    <!-- custom js -->
+    <script>
+        $(document).ready(function($) {
+
+        /*======= Skillset *=======*/
+
+        jQuery('.level-bar-inner').css('width', '0');
+
+        $(window).on('load', function() {
+        
+            $('.level-bar-inner').each(function() {
+            
+                var itemWidth = $(this).data('level');
+
+                $(this).animate({
+                    width: itemWidth
+                }, 800);
+
+            });
+        
+        });
+
+        /* Bootstrap Tooltip for Skillset */
+        $('.level-label').tooltip(); 
+        });
+    </script>
     <!-- github calendar plugin -->
-    <!-- <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script> -->
-    <!-- <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script> -->
-    <!-- <script>GitHubCalendar(".calendar", "thedeterminator", { responsive: true });</script>  -->
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <script>GitHubCalendar("#github-graph", "thedeterminator", { responsive: true });</script>
     <!-- github activity plugin -->
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-    <!-- <script type="text/javascript" src="assets/plugins/github-activity/github-activity-0.1.5.min.js"></script> -->
-    <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>            
+    <script type="text/javascript" src="assets/plugins/github-activity/github-activity-0.1.5.min.js"></script>
+    <script>GitHubActivity.feed({ username: "thedeterminator", selector: "#ghfeed" });</script>
 </body>
 </html> 
 
