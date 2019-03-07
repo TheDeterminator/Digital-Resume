@@ -8,8 +8,8 @@
 */
 body {
   font-family: 'Lato', arial, sans-serif;
-  color: #434343;
-  background: #DAE3E7;
+  color: #313131;
+  background: slategray;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -118,8 +118,8 @@ a.dotted-link:hover {
 /* ======= Header ======= */
 .header {
   padding: 30px 0;
-  background: #f5f5f5;
-  border-top: 10px solid #778492;
+  background-image: url('../images/projects/digital-resume-bkg.jpg');
+  border-top: 5px solid #778492; 
 }
 
 .header .btn {
@@ -130,22 +130,28 @@ a.dotted-link:hover {
 .header .profile-image {
   margin-right: 30px;
   border-radius: 50%;
+  border: 1px solid white;
 }
 
 .header .profile-content .name {
-  color: #49515a;
+  color: #ffffff;
   font-size: 38px;
   margin-bottom: 5px;
   margin-top: 30px;
+  -webkit-text-stroke: 1px black;
 }
 
 .header .profile-content .desc {
-  color: #778492;
-  font-family: "Lato", arial, sans-serif;
-  font-weight: 400;
-  font-size: 24px;
+  color: #ffffff;
+  font-family: arial, sans-serif;
+  font-weight: 600;
+  font-size: 32px;
   margin-top: 0;
   margin-bottom: 15px;
+  /* background: black; */
+  /* opacity: 0.7; */
+  /* text-shadow: 3px 3px #111111; */
+  -webkit-text-stroke: 1px black;
 }
 
 .header .profile-content .social a {
@@ -163,6 +169,7 @@ a.dotted-link:hover {
   background-clip: padding-box;
   color: #fff;
   text-align: center;
+  border: 1px solid white;
 }
 
 .header .profile-content .social a:hover {
