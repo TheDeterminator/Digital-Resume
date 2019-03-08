@@ -15,6 +15,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.skill-box {
+  font-size: 65px;
+  display: inline-block;
+  text-align: center;
+}
+
+.skill-box p {
+  margin-top: -10px;
+  font-size: 12px;
+}
+
+.icon-sub {
+  font-size: 12px;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;

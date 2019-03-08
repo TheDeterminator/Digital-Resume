@@ -233,37 +233,56 @@
                                 Here is a brief list of my skills a more complete list can be found on LinkedIn. Among other things my experience with Databases, Node and Alogorithms and Software tools are not detailed below</p>
                             
                             <div class="skillset">
-                                <div class="item">
-                                    <h3 class="level-title">Javascript &amp; React<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="I am advanced in ES6+ along with React.js and Node.js"><i class="fas fa-info-circle"></i>Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="96%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
+                                <div class="skill-box">
+                                        <i class="fab fa-js-square"></i> 
+                                        <p>Javascript</p>
+                                </div>
+                                <div class="skill-box">
+                                        <i class="fab fa-python"></i> 
+                                        <p>Python</p>
+                                </div>
+                                <div class="skill-box">
+                                        <i class="fab fa-node"></i> 
+                                        <p>Node.js</p>
+                                </div>
+                                <div class="skill-box">
+                                        <i class="fab fa-react"></i> 
+                                        <p>React.js</p>
+                                </div>
+                                <div class="skill-box">
+                                        <i class="fab fa-html5"></i> 
+                                        <p>HTML</p>
+                                </div>
+                                <div class="skill-box">
+                                        <i class="fab fa-css3-alt"></i> 
+                                        <p>CSS</p>
+                                </div>
+                                <div class="skill-box">
+                                        <i class="fab fa-git"></i> 
+                                        <p>Git</p>
+                                </div>
+                                <div class="skill-box">
+                                        <i class="fas fa-terminal"></i> 
+                                        <p>Bash/Terminal</p>
+                                </div>
+                                <div class="skill-box">
+                                        <i class="fab fa-php"></i> 
+                                        <p>PHP</p>
+                                </div>
+                                <div class="skill-box">
+                                        <img src="https://img.icons8.com/color/96/000000/c-programming.png" alt="C programming" style="height: 75px; width: 75px"> 
+                                        <p>C</p>
+                                </div>
+                                <div class="skill-box">
+                                        <i class="fas fa-database"></i> 
+                                        <p>SQL</p>
+                                </div>
+                                <div class="skill-box">
+                                        <img src="https://img.icons8.com/color/96/000000/mongodb.png" alt="Mongo DB" style="height: 75px; width: 75px">
+                                        <p>MongoDB</p>
+                                </div>
+                                <!-- ADD THIS <a href="https://icons8.com/icon/40670/c-programming">C Programming icon by Icons8</a> -->
                                 
-                                <div class="item">
-                                    <h3 class="level-title">HTML5/CSS3/LESS/Frmwrks<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Very advanced with HTML/CSS/JS and preprocessors and frameworks"><i class="fas fa-info-circle"></i>Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="96%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">C programming<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="I am very proficient in C"><i class="fas fa-info-circle"></i>Pro</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="85%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">Python/Django<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="I am advanced in Python and proficient with Django"><i class="fas fa-info-circle"></i>Pro</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="83%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
                                 
                                 <p><a class="more-link" href="https://www.linkedin.com/in/alec-jordan-673b138b/" target="_blank"><i class="fas fa-external-link-alt"></i>More on LinkedIn</a></p> 
                             </div>              
@@ -297,32 +316,30 @@
     <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
     <!-- custom js -->
     <script>
-        $(document).ready(function($) {
+        // $(document).ready(function($) {
 
-        /*======= Skillset *=======*/
+        // /*======= Skillset *=======*/
 
-        jQuery('.level-bar-inner').css('width', '0');
+        // jQuery('.level-bar-inner').css('width', '0');
 
-        $(window).on('load', function() {
+        // $(window).on('load', function() {
         
-            $('.level-bar-inner').each(function() {
+        //     $('.level-bar-inner').each(function() {
             
-                var itemWidth = $(this).data('level');
+        //         var itemWidth = $(this).data('level');
 
-                $(this).animate({
-                    width: itemWidth
-                }, 800);
+        //         $(this).animate({
+        //             width: itemWidth
+        //         }, 800);
 
-            });
+        //     });
         
-        });
-        // document.onload(function() {
-        //     alert('hi')''
-        // })
-
+        // });
         /* Bootstrap Tooltip for Skillset */
+        function sayHello(){alert('hello')}
+
         $('.level-label').tooltip(); 
-        });
+        // });
     </script>
     <!-- github calendar plugin -->
     <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
