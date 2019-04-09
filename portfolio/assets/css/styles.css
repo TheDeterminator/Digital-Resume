@@ -170,7 +170,7 @@ a.dotted-link:hover {
 }
 
 .header .profile-content .social a {
-  background: #b0b7bf;
+  background: #54ba4e;
   width: 36px;
   height: 36px;
   display: inline-block;
@@ -188,7 +188,7 @@ a.dotted-link:hover {
 }
 
 .header .profile-content .social a:hover {
-  background: #778492;
+  background: #0a6302;
 }
 
 .header .profile-content .social a .svg-inline--fa {
@@ -602,12 +602,13 @@ a.dotted-link:hover {
 }
 
 .list ul li a {
-  color: #778492;
+  color: #54ba4e; 
 }
 
 .list ul li a:hover {
-  color: #49515a;
+  color: #0d8029;
 }
+
 
 /* Credits */
 .credits ul li {
